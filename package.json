@@ -1,0 +1,20 @@
+{
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "name": "jwt-tokenizer-express",
+  "version": "1.0.0",
+  "description": "simple authentification server by JWT token",
+  "author": "Jurgen Ivanko <tech.jurgenet@gmail.com> and folks",
+  "copyright": "Copyright 2018 all rights reserved",
+  "main": "server.js",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "jsonwebtoken": "^8.1.1",
+    "mongoose": "^5.0.7",
+    "morgan": "^1.9.0"
+  },
+  "private": true
+}
