@@ -1,5 +1,5 @@
 module.exports = {
-  port: 8080,
+  port: 8081,
   secret: 'jwtauthtokenizer',
   database: 'mongodb://localhost:27017/auth',
 };
