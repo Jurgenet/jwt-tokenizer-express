@@ -11,11 +11,10 @@ class DatabaseService {
   }
 
   static createUser(userProps) {
-    const { firstName, lastName, password, isAdmin } = userProps;
+    const { userId, password, isAdmin } = userProps;
 
     const user = new UserModel({
-      firstName,
-      lastName,
+      userId,
       password,
       isAdmin,
       createdAt: Date.now(),
@@ -41,10 +40,10 @@ class DatabaseService {
   }
 
   static findUser(userProps) {
-    const { firstName, lastName, password } = userProps;
+    const { userId, password } = userProps;
 
     return new Promise((res, rej) => {
-      UserModel.findOne({ firstName, lastName }, (err, user) => {
+      UserModel.findOne({ userId }, (err, user) => {
         if (err) rej(err);
 
         if (!user) {

@@ -62,8 +62,7 @@ class ApiController {
     // route to authenticate a user (POST http://localhost:8080/api/authenticate)
     _router.post('/auth', (req, res) => {
       DatabaseService.findUser({
-        firstName: req.body.firstName,
-        lastName: req.body.lastName,
+        userId: req.body.userId,
         password: req.body.password,
       })
         .then(user => {

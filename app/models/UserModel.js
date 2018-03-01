@@ -4,8 +4,7 @@ const Schema = mongoose.Schema;
 module.exports = mongoose.model(
   'User',
   new Schema({
-    firstName: String,
-    lastName: String,
+    userId: String,
     password: String,
     isAdmin: Boolean,
     createdAt: Date,
